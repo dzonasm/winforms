@@ -649,7 +649,6 @@
             listBoxEditLearningModuleStudentSelect.SelectionMode = SelectionMode.MultiSimple;
             listBoxEditLearningModuleStudentSelect.Size = new Size(203, 339);
             listBoxEditLearningModuleStudentSelect.TabIndex = 10;
-            listBoxEditLearningModuleStudentSelect.SelectedIndexChanged += listBoxEditLearningModuleStudentSelect_SelectedIndexChanged;
             // 
             // btnEditLearningModuleSave
             // 
