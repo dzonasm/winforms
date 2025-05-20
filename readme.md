@@ -1,6 +1,7 @@
-Install Visual Studio 2022
-Clone git repo https://github.com/dzonasm/winforms.git
-Open the project in Visual Studio
-Set DbPath to the absolute path of "students_app.db" file, located in "Database" directory
-Launch the project in Visual Studio
-Happy coding!
+### How to run the project
+1. Download Visual Studio 2022
+2. Clone this GitHub repository
+3. In Visual Studio update the AppDatabaseContext.cs file variable DbPath to point to students_app.db absolute directory
+4. Run the project in Visual Studio
+
+Happy coding
