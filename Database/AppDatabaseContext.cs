@@ -8,7 +8,7 @@ namespace WF_job.Database
         public virtual DbSet<Grade> Grades { get; set; }
         public virtual DbSet<LearningModule> LearningModules { get; set; }
 
-        public string DbPath = "C:/Users/S9801G/AppData/Local/students_app.db";
+        public string DbPath = "C:/Users/jmarc/Source/Repos/winforms/Database/students_app.db";
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite($"Data Source={DbPath}");
 

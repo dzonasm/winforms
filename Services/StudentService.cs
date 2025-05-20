@@ -7,14 +7,13 @@ namespace StudentManagement
 {
 
 
-    public class StudentService : IStudentService, IDisposable
+    public class StudentService : IStudentService
     {
         private readonly AppDatabaseContext _context;
         private readonly bool _ownsContext;
         public StudentService(AppDatabaseContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
-            _ownsContext = false;
         }
 
         public async Task<IEnumerable<Student>> FindAllAsync()
@@ -80,14 +79,6 @@ namespace StudentManagement
             await _context.SaveChangesAsync();
 
             return true;
-        }
-
-        public void Dispose()
-        {
-            if (_ownsContext)
-            {
-                _context?.Dispose();
-            }
         }
     }
 }
