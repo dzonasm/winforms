@@ -10,7 +10,6 @@ namespace StudentManagement
     public class StudentService : IStudentService
     {
         private readonly AppDatabaseContext _context;
-        private readonly bool _ownsContext;
         public StudentService(AppDatabaseContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));

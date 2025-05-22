@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using WF_job.Database;
+﻿using WF_job.Database;
+using WF_job.Interfaces;
 
 namespace WF_job.Services
 {
-    public class GradeService
+    public class GradeService : IGradeService
     {
         private readonly AppDatabaseContext _context;
         public GradeService(AppDatabaseContext context)

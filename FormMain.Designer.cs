@@ -17,6 +17,10 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             tabControl = new TabControl();
             tabPage1 = new TabPage();
             label6 = new Label();
@@ -86,11 +90,10 @@
             tabControl.Controls.Add(tabPage1);
             tabControl.Controls.Add(tabPage2);
             tabControl.Controls.Add(tabPage3);
-            tabControl.Location = new Point(14, 15);
-            tabControl.Margin = new Padding(4);
+            tabControl.Location = new Point(11, 12);
             tabControl.Name = "tabControl";
             tabControl.SelectedIndex = 0;
-            tabControl.Size = new Size(909, 705);
+            tabControl.Size = new Size(727, 564);
             tabControl.TabIndex = 0;
             tabControl.SelectedIndexChanged += tabControl_SelectedIndexChanged;
             // 
@@ -98,11 +101,10 @@
             // 
             tabPage1.Controls.Add(label6);
             tabPage1.Controls.Add(tableLayoutPanel2);
-            tabPage1.Location = new Point(4, 34);
-            tabPage1.Margin = new Padding(4);
+            tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(4);
-            tabPage1.Size = new Size(901, 667);
+            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Size = new Size(719, 531);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Studentai";
             tabPage1.UseVisualStyleBackColor = true;
@@ -110,10 +112,9 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(0, 81);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(0, 65);
             label6.Name = "label6";
-            label6.Size = new Size(0, 25);
+            label6.Size = new Size(0, 20);
             label6.TabIndex = 9;
             // 
             // tableLayoutPanel2
@@ -139,31 +140,31 @@
             tableLayoutPanel2.Controls.Add(dataGridViewStudentList, 0, 5);
             tableLayoutPanel2.Controls.Add(updateStudentLearningModulesList, 2, 5);
             tableLayoutPanel2.Dock = DockStyle.Fill;
-            tableLayoutPanel2.Location = new Point(4, 4);
-            tableLayoutPanel2.Margin = new Padding(4, 5, 4, 5);
+            tableLayoutPanel2.Location = new Point(3, 3);
+            tableLayoutPanel2.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 33F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 27F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 44F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 41F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 34F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 55F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 51F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 16F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 59F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 13F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 47F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 115F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 46F));
-            tableLayoutPanel2.Size = new Size(893, 659);
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 92F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 40F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 37F));
+            tableLayoutPanel2.Size = new Size(713, 525);
             tableLayoutPanel2.TabIndex = 25;
             // 
             // btnOpenNewStudentForm
             // 
             tableLayoutPanel2.SetColumnSpan(btnOpenNewStudentForm, 2);
             btnOpenNewStudentForm.Dock = DockStyle.Fill;
-            btnOpenNewStudentForm.Location = new Point(449, 618);
-            btnOpenNewStudentForm.Margin = new Padding(4, 5, 4, 5);
+            btnOpenNewStudentForm.Location = new Point(358, 492);
+            btnOpenNewStudentForm.Margin = new Padding(3, 4, 3, 4);
             btnOpenNewStudentForm.Name = "btnOpenNewStudentForm";
-            btnOpenNewStudentForm.Size = new Size(440, 36);
+            btnOpenNewStudentForm.Size = new Size(352, 29);
             btnOpenNewStudentForm.TabIndex = 24;
             btnOpenNewStudentForm.Text = "Naujas Studentas";
             btnOpenNewStudentForm.UseVisualStyleBackColor = true;
@@ -173,10 +174,9 @@
             // 
             tableLayoutPanel2.SetColumnSpan(label5, 2);
             label5.Dock = DockStyle.Fill;
-            label5.Location = new Point(4, 0);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(3, 0);
             label5.Name = "label5";
-            label5.Size = new Size(437, 41);
+            label5.Size = new Size(349, 33);
             label5.TabIndex = 7;
             label5.Text = "Studentų paieška ir redagavimas";
             label5.TextAlign = ContentAlignment.MiddleLeft;
@@ -184,10 +184,10 @@
             // deleteStudentButton
             // 
             deleteStudentButton.Dock = DockStyle.Fill;
-            deleteStudentButton.Location = new Point(672, 568);
-            deleteStudentButton.Margin = new Padding(4, 5, 4, 5);
+            deleteStudentButton.Location = new Point(536, 452);
+            deleteStudentButton.Margin = new Padding(3, 4, 3, 4);
             deleteStudentButton.Name = "deleteStudentButton";
-            deleteStudentButton.Size = new Size(217, 40);
+            deleteStudentButton.Size = new Size(174, 32);
             deleteStudentButton.TabIndex = 23;
             deleteStudentButton.Text = "Ištrinti";
             deleteStudentButton.UseVisualStyleBackColor = true;
@@ -197,10 +197,9 @@
             // 
             label9.AutoSize = true;
             label9.Dock = DockStyle.Left;
-            label9.Location = new Point(449, 0);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Location = new Point(358, 0);
             label9.Name = "label9";
-            label9.Size = new Size(117, 41);
+            label9.Size = new Size(98, 33);
             label9.TabIndex = 7;
             label9.Text = "Redagavimas";
             label9.TextAlign = ContentAlignment.MiddleLeft;
@@ -208,10 +207,10 @@
             // updateStudentButton
             // 
             updateStudentButton.Dock = DockStyle.Fill;
-            updateStudentButton.Location = new Point(449, 568);
-            updateStudentButton.Margin = new Padding(4, 5, 4, 5);
+            updateStudentButton.Location = new Point(358, 452);
+            updateStudentButton.Margin = new Padding(3, 4, 3, 4);
             updateStudentButton.Name = "updateStudentButton";
-            updateStudentButton.Size = new Size(215, 40);
+            updateStudentButton.Size = new Size(172, 32);
             updateStudentButton.TabIndex = 23;
             updateStudentButton.Text = "Atnaujinti";
             updateStudentButton.UseVisualStyleBackColor = true;
@@ -221,10 +220,9 @@
             // 
             label7.AutoSize = true;
             label7.Dock = DockStyle.Left;
-            label7.Location = new Point(4, 41);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(3, 33);
             label7.Name = "label7";
-            label7.Size = new Size(138, 34);
+            label7.Size = new Size(116, 27);
             label7.TabIndex = 10;
             label7.Text = "Tekstinė paieška";
             label7.TextAlign = ContentAlignment.MiddleLeft;
@@ -233,10 +231,9 @@
             // 
             tableLayoutPanel2.SetColumnSpan(textBox3, 2);
             textBox3.Dock = DockStyle.Fill;
-            textBox3.Location = new Point(4, 79);
-            textBox3.Margin = new Padding(4);
+            textBox3.Location = new Point(3, 63);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(437, 31);
+            textBox3.Size = new Size(349, 27);
             textBox3.TabIndex = 11;
             textBox3.TextChanged += textBox3_TextChanged;
             // 
@@ -244,10 +241,9 @@
             // 
             label12.AutoSize = true;
             label12.Dock = DockStyle.Fill;
-            label12.Location = new Point(449, 130);
-            label12.Margin = new Padding(4, 0, 4, 0);
+            label12.Location = new Point(358, 104);
             label12.Name = "label12";
-            label12.Size = new Size(215, 51);
+            label12.Size = new Size(172, 41);
             label12.TabIndex = 19;
             label12.Text = "Pasirinkti modulius";
             label12.TextAlign = ContentAlignment.MiddleLeft;
@@ -256,10 +252,9 @@
             // 
             label8.AutoSize = true;
             label8.Dock = DockStyle.Left;
-            label8.Location = new Point(4, 130);
-            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Location = new Point(3, 104);
             label8.Name = "label8";
-            label8.Size = new Size(86, 51);
+            label8.Size = new Size(72, 41);
             label8.TabIndex = 12;
             label8.Text = "Studentai";
             label8.TextAlign = ContentAlignment.MiddleLeft;
@@ -267,29 +262,26 @@
             // updateStudentSurnameBox
             // 
             updateStudentSurnameBox.Dock = DockStyle.Fill;
-            updateStudentSurnameBox.Location = new Point(672, 79);
-            updateStudentSurnameBox.Margin = new Padding(4);
+            updateStudentSurnameBox.Location = new Point(536, 63);
             updateStudentSurnameBox.Name = "updateStudentSurnameBox";
-            updateStudentSurnameBox.Size = new Size(217, 31);
+            updateStudentSurnameBox.Size = new Size(174, 27);
             updateStudentSurnameBox.TabIndex = 17;
             // 
             // updateStudentNameBox
             // 
             updateStudentNameBox.Dock = DockStyle.Fill;
-            updateStudentNameBox.Location = new Point(449, 79);
-            updateStudentNameBox.Margin = new Padding(4);
+            updateStudentNameBox.Location = new Point(358, 63);
             updateStudentNameBox.Name = "updateStudentNameBox";
-            updateStudentNameBox.Size = new Size(215, 31);
+            updateStudentNameBox.Size = new Size(172, 27);
             updateStudentNameBox.TabIndex = 15;
             // 
             // EditSurnameLabel
             // 
             EditSurnameLabel.AutoSize = true;
             EditSurnameLabel.Dock = DockStyle.Fill;
-            EditSurnameLabel.Location = new Point(672, 41);
-            EditSurnameLabel.Margin = new Padding(4, 0, 4, 0);
+            EditSurnameLabel.Location = new Point(536, 33);
             EditSurnameLabel.Name = "EditSurnameLabel";
-            EditSurnameLabel.Size = new Size(217, 34);
+            EditSurnameLabel.Size = new Size(174, 27);
             EditSurnameLabel.TabIndex = 16;
             EditSurnameLabel.Text = "Pavardė";
             EditSurnameLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -298,10 +290,9 @@
             // 
             EditNameLabel.AutoSize = true;
             EditNameLabel.Dock = DockStyle.Fill;
-            EditNameLabel.Location = new Point(449, 41);
-            EditNameLabel.Margin = new Padding(4, 0, 4, 0);
+            EditNameLabel.Location = new Point(358, 33);
             EditNameLabel.Name = "EditNameLabel";
-            EditNameLabel.Size = new Size(215, 34);
+            EditNameLabel.Size = new Size(172, 27);
             EditNameLabel.TabIndex = 14;
             EditNameLabel.Text = "Vardas";
             EditNameLabel.TextAlign = ContentAlignment.MiddleLeft;
@@ -309,18 +300,34 @@
             // dataGridViewStudentList
             // 
             dataGridViewStudentList.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridViewStudentList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewStudentList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewStudentList.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, nameDataGridViewTextBoxColumn, surnameDataGridViewTextBoxColumn });
             tableLayoutPanel2.SetColumnSpan(dataGridViewStudentList, 2);
             dataGridViewStudentList.DataSource = studentBindingSource;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridViewStudentList.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewStudentList.Dock = DockStyle.Fill;
-            dataGridViewStudentList.Location = new Point(4, 202);
-            dataGridViewStudentList.Margin = new Padding(4, 5, 4, 5);
+            dataGridViewStudentList.Location = new Point(3, 162);
+            dataGridViewStudentList.Margin = new Padding(3, 4, 3, 4);
             dataGridViewStudentList.Name = "dataGridViewStudentList";
             dataGridViewStudentList.RowHeadersWidth = 51;
             tableLayoutPanel2.SetRowSpan(dataGridViewStudentList, 5);
             dataGridViewStudentList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewStudentList.Size = new Size(437, 452);
+            dataGridViewStudentList.Size = new Size(349, 359);
             dataGridViewStudentList.TabIndex = 13;
             dataGridViewStudentList.CellClick += dataGridView1_CellClick;
             dataGridViewStudentList.ColumnHeaderMouseClick += studentList_ColumnHeaderMouseClick;
@@ -360,23 +367,21 @@
             tableLayoutPanel2.SetColumnSpan(updateStudentLearningModulesList, 2);
             updateStudentLearningModulesList.Dock = DockStyle.Fill;
             updateStudentLearningModulesList.FormattingEnabled = true;
-            updateStudentLearningModulesList.ItemHeight = 25;
-            updateStudentLearningModulesList.Location = new Point(449, 202);
-            updateStudentLearningModulesList.Margin = new Padding(4, 5, 4, 5);
+            updateStudentLearningModulesList.Location = new Point(358, 162);
+            updateStudentLearningModulesList.Margin = new Padding(3, 4, 3, 4);
             updateStudentLearningModulesList.Name = "updateStudentLearningModulesList";
             tableLayoutPanel2.SetRowSpan(updateStudentLearningModulesList, 3);
             updateStudentLearningModulesList.SelectionMode = SelectionMode.MultiSimple;
-            updateStudentLearningModulesList.Size = new Size(440, 356);
+            updateStudentLearningModulesList.Size = new Size(352, 282);
             updateStudentLearningModulesList.TabIndex = 22;
             // 
             // tabPage2
             // 
             tabPage2.Controls.Add(tableLayoutPanel1);
-            tabPage2.Location = new Point(4, 34);
-            tabPage2.Margin = new Padding(4);
+            tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(4);
-            tabPage2.Size = new Size(901, 667);
+            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Size = new Size(719, 531);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Pažymiai";
             tabPage2.UseVisualStyleBackColor = true;
@@ -384,37 +389,53 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 229F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 183F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 220F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 176F));
             tableLayoutPanel1.Controls.Add(learningModuleDataGrid, 0, 1);
             tableLayoutPanel1.Controls.Add(buttonSaveGrades, 2, 0);
             tableLayoutPanel1.Controls.Add(comboBoxModuleSelect, 1, 0);
             tableLayoutPanel1.Controls.Add(label10, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
-            tableLayoutPanel1.Location = new Point(4, 4);
-            tableLayoutPanel1.Margin = new Padding(4, 5, 4, 5);
+            tableLayoutPanel1.Location = new Point(3, 3);
+            tableLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 49F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 39F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(893, 659);
+            tableLayoutPanel1.Size = new Size(713, 525);
             tableLayoutPanel1.TabIndex = 27;
             // 
             // learningModuleDataGrid
             // 
             learningModuleDataGrid.AutoGenerateColumns = false;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            learningModuleDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             learningModuleDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             learningModuleDataGrid.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn1, nameDataGridViewTextBoxColumn1, surnameDataGridViewTextBoxColumn1, ScoresDisplay, GPA });
             tableLayoutPanel1.SetColumnSpan(learningModuleDataGrid, 3);
             learningModuleDataGrid.DataSource = studentBindingSource;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            learningModuleDataGrid.DefaultCellStyle = dataGridViewCellStyle4;
             learningModuleDataGrid.Dock = DockStyle.Fill;
             learningModuleDataGrid.EditMode = DataGridViewEditMode.EditOnEnter;
-            learningModuleDataGrid.Location = new Point(4, 54);
-            learningModuleDataGrid.Margin = new Padding(4, 5, 4, 5);
+            learningModuleDataGrid.Location = new Point(3, 43);
+            learningModuleDataGrid.Margin = new Padding(3, 4, 3, 4);
             learningModuleDataGrid.Name = "learningModuleDataGrid";
             learningModuleDataGrid.RowHeadersWidth = 51;
-            learningModuleDataGrid.Size = new Size(885, 600);
+            learningModuleDataGrid.Size = new Size(707, 478);
             learningModuleDataGrid.TabIndex = 24;
             learningModuleDataGrid.CellValidating += learningModuleDataGrid_CellValidating;
             learningModuleDataGrid.ColumnHeaderMouseClick += learningModuleDataGrid_ColumnHeaderMouseClick;
@@ -470,10 +491,9 @@
             // buttonSaveGrades
             // 
             buttonSaveGrades.Dock = DockStyle.Fill;
-            buttonSaveGrades.Location = new Point(677, 4);
-            buttonSaveGrades.Margin = new Padding(4);
+            buttonSaveGrades.Location = new Point(540, 3);
             buttonSaveGrades.Name = "buttonSaveGrades";
-            buttonSaveGrades.Size = new Size(212, 41);
+            buttonSaveGrades.Size = new Size(170, 33);
             buttonSaveGrades.TabIndex = 26;
             buttonSaveGrades.Text = "Išsaugoti pažymius";
             buttonSaveGrades.UseVisualStyleBackColor = true;
@@ -483,10 +503,9 @@
             // 
             comboBoxModuleSelect.Dock = DockStyle.Fill;
             comboBoxModuleSelect.FormattingEnabled = true;
-            comboBoxModuleSelect.Location = new Point(233, 4);
-            comboBoxModuleSelect.Margin = new Padding(4);
+            comboBoxModuleSelect.Location = new Point(186, 3);
             comboBoxModuleSelect.Name = "comboBoxModuleSelect";
-            comboBoxModuleSelect.Size = new Size(436, 33);
+            comboBoxModuleSelect.Size = new Size(348, 28);
             comboBoxModuleSelect.TabIndex = 25;
             comboBoxModuleSelect.SelectedIndexChanged += comboBoxModuleSelect_SelectedIndexChanged;
             // 
@@ -494,10 +513,9 @@
             // 
             label10.AutoSize = true;
             label10.Dock = DockStyle.Fill;
-            label10.Location = new Point(4, 0);
-            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Location = new Point(3, 0);
             label10.Name = "label10";
-            label10.Size = new Size(221, 49);
+            label10.Size = new Size(177, 39);
             label10.TabIndex = 0;
             label10.Text = "Modulio Pasirinkimas";
             label10.TextAlign = ContentAlignment.MiddleLeft;
@@ -505,11 +523,11 @@
             // tabPage3
             // 
             tabPage3.Controls.Add(tableLayoutPanel3);
-            tabPage3.Location = new Point(4, 34);
-            tabPage3.Margin = new Padding(4, 5, 4, 5);
+            tabPage3.Location = new Point(4, 29);
+            tabPage3.Margin = new Padding(3, 4, 3, 4);
             tabPage3.Name = "tabPage3";
-            tabPage3.Padding = new Padding(4, 5, 4, 5);
-            tabPage3.Size = new Size(901, 667);
+            tabPage3.Padding = new Padding(3, 4, 3, 4);
+            tabPage3.Size = new Size(719, 531);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Moduliai";
             tabPage3.UseVisualStyleBackColor = true;
@@ -535,27 +553,26 @@
             tableLayoutPanel3.Controls.Add(btnEditLearningModuleSave, 2, 5);
             tableLayoutPanel3.Controls.Add(btnDeleteLearningModule, 3, 5);
             tableLayoutPanel3.Dock = DockStyle.Fill;
-            tableLayoutPanel3.Location = new Point(4, 5);
-            tableLayoutPanel3.Margin = new Padding(4, 5, 4, 5);
+            tableLayoutPanel3.Location = new Point(3, 4);
+            tableLayoutPanel3.Margin = new Padding(3, 4, 3, 4);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 6;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 47.22222F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 52.77778F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 46F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 434F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 51F));
-            tableLayoutPanel3.Size = new Size(893, 657);
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 37F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 29F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 347F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 41F));
+            tableLayoutPanel3.Size = new Size(713, 523);
             tableLayoutPanel3.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Dock = DockStyle.Left;
-            label1.Location = new Point(4, 0);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(134, 42);
+            label1.Size = new Size(111, 32);
             label1.TabIndex = 0;
             label1.Text = "Naujas modulis";
             label1.TextAlign = ContentAlignment.MiddleLeft;
@@ -563,20 +580,19 @@
             // textBoxNewLearningModuleName
             // 
             textBoxNewLearningModuleName.Dock = DockStyle.Fill;
-            textBoxNewLearningModuleName.Location = new Point(4, 94);
-            textBoxNewLearningModuleName.Margin = new Padding(4, 5, 4, 5);
+            textBoxNewLearningModuleName.Location = new Point(3, 72);
+            textBoxNewLearningModuleName.Margin = new Padding(3, 4, 3, 4);
             textBoxNewLearningModuleName.Name = "textBoxNewLearningModuleName";
-            textBoxNewLearningModuleName.Size = new Size(272, 31);
+            textBoxNewLearningModuleName.Size = new Size(218, 27);
             textBoxNewLearningModuleName.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Dock = DockStyle.Left;
-            label2.Location = new Point(4, 42);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(3, 32);
             label2.Name = "label2";
-            label2.Size = new Size(184, 47);
+            label2.Size = new Size(153, 36);
             label2.TabIndex = 2;
             label2.Text = "Modulio pavadinimas";
             label2.TextAlign = ContentAlignment.MiddleLeft;
@@ -585,22 +601,20 @@
             // 
             listBoxNewLearningModuleStudents.Dock = DockStyle.Fill;
             listBoxNewLearningModuleStudents.FormattingEnabled = true;
-            listBoxNewLearningModuleStudents.ItemHeight = 25;
-            listBoxNewLearningModuleStudents.Location = new Point(4, 176);
-            listBoxNewLearningModuleStudents.Margin = new Padding(4, 5, 4, 5);
+            listBoxNewLearningModuleStudents.Location = new Point(3, 138);
+            listBoxNewLearningModuleStudents.Margin = new Padding(3, 4, 3, 4);
             listBoxNewLearningModuleStudents.Name = "listBoxNewLearningModuleStudents";
             listBoxNewLearningModuleStudents.SelectionMode = SelectionMode.MultiSimple;
-            listBoxNewLearningModuleStudents.Size = new Size(272, 424);
+            listBoxNewLearningModuleStudents.Size = new Size(218, 339);
             listBoxNewLearningModuleStudents.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Dock = DockStyle.Left;
-            label3.Location = new Point(4, 135);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(3, 105);
             label3.Name = "label3";
-            label3.Size = new Size(145, 36);
+            label3.Size = new Size(119, 29);
             label3.TabIndex = 4;
             label3.Text = "Pridėti studentus";
             label3.TextAlign = ContentAlignment.MiddleLeft;
@@ -608,10 +622,10 @@
             // btnSaveNewLearningModule
             // 
             btnSaveNewLearningModule.Dock = DockStyle.Fill;
-            btnSaveNewLearningModule.Location = new Point(4, 610);
-            btnSaveNewLearningModule.Margin = new Padding(4, 5, 4, 5);
+            btnSaveNewLearningModule.Location = new Point(3, 485);
+            btnSaveNewLearningModule.Margin = new Padding(3, 4, 3, 4);
             btnSaveNewLearningModule.Name = "btnSaveNewLearningModule";
-            btnSaveNewLearningModule.Size = new Size(272, 42);
+            btnSaveNewLearningModule.Size = new Size(218, 34);
             btnSaveNewLearningModule.TabIndex = 5;
             btnSaveNewLearningModule.Text = "Išsaugoti";
             btnSaveNewLearningModule.UseVisualStyleBackColor = true;
@@ -621,10 +635,9 @@
             // 
             label4.AutoSize = true;
             label4.Dock = DockStyle.Left;
-            label4.Location = new Point(447, 0);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(357, 0);
             label4.Name = "label4";
-            label4.Size = new Size(185, 42);
+            label4.Size = new Size(154, 32);
             label4.TabIndex = 6;
             label4.Text = "Modulio redagavimas";
             label4.TextAlign = ContentAlignment.MiddleLeft;
@@ -633,10 +646,9 @@
             // 
             label11.AutoSize = true;
             label11.Dock = DockStyle.Left;
-            label11.Location = new Point(447, 42);
-            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Location = new Point(357, 32);
             label11.Name = "label11";
-            label11.Size = new Size(142, 47);
+            label11.Size = new Size(118, 36);
             label11.TabIndex = 7;
             label11.Text = "Pasirinkti modulį";
             label11.TextAlign = ContentAlignment.MiddleLeft;
@@ -645,10 +657,10 @@
             // 
             comboBoxEditLearningModuleSelect.Dock = DockStyle.Fill;
             comboBoxEditLearningModuleSelect.FormattingEnabled = true;
-            comboBoxEditLearningModuleSelect.Location = new Point(447, 94);
-            comboBoxEditLearningModuleSelect.Margin = new Padding(4, 5, 4, 5);
+            comboBoxEditLearningModuleSelect.Location = new Point(357, 72);
+            comboBoxEditLearningModuleSelect.Margin = new Padding(3, 4, 3, 4);
             comboBoxEditLearningModuleSelect.Name = "comboBoxEditLearningModuleSelect";
-            comboBoxEditLearningModuleSelect.Size = new Size(254, 33);
+            comboBoxEditLearningModuleSelect.Size = new Size(203, 28);
             comboBoxEditLearningModuleSelect.TabIndex = 8;
             comboBoxEditLearningModuleSelect.SelectedIndexChanged += comboBoxEditLearningModuleSelect_SelectedIndexChanged;
             // 
@@ -656,10 +668,9 @@
             // 
             label13.AutoSize = true;
             label13.Dock = DockStyle.Left;
-            label13.Location = new Point(447, 135);
-            label13.Margin = new Padding(4, 0, 4, 0);
+            label13.Location = new Point(357, 105);
             label13.Name = "label13";
-            label13.Size = new Size(157, 36);
+            label13.Size = new Size(130, 29);
             label13.TabIndex = 9;
             label13.Text = "Modulio studentai";
             label13.TextAlign = ContentAlignment.MiddleLeft;
@@ -668,21 +679,20 @@
             // 
             listBoxEditLearningModuleStudentSelect.Dock = DockStyle.Fill;
             listBoxEditLearningModuleStudentSelect.FormattingEnabled = true;
-            listBoxEditLearningModuleStudentSelect.ItemHeight = 25;
-            listBoxEditLearningModuleStudentSelect.Location = new Point(447, 176);
-            listBoxEditLearningModuleStudentSelect.Margin = new Padding(4, 5, 4, 5);
+            listBoxEditLearningModuleStudentSelect.Location = new Point(357, 138);
+            listBoxEditLearningModuleStudentSelect.Margin = new Padding(3, 4, 3, 4);
             listBoxEditLearningModuleStudentSelect.Name = "listBoxEditLearningModuleStudentSelect";
             listBoxEditLearningModuleStudentSelect.SelectionMode = SelectionMode.MultiSimple;
-            listBoxEditLearningModuleStudentSelect.Size = new Size(254, 424);
+            listBoxEditLearningModuleStudentSelect.Size = new Size(203, 339);
             listBoxEditLearningModuleStudentSelect.TabIndex = 10;
             // 
             // btnEditLearningModuleSave
             // 
             btnEditLearningModuleSave.Dock = DockStyle.Fill;
-            btnEditLearningModuleSave.Location = new Point(447, 610);
-            btnEditLearningModuleSave.Margin = new Padding(4, 5, 4, 5);
+            btnEditLearningModuleSave.Location = new Point(357, 485);
+            btnEditLearningModuleSave.Margin = new Padding(3, 4, 3, 4);
             btnEditLearningModuleSave.Name = "btnEditLearningModuleSave";
-            btnEditLearningModuleSave.Size = new Size(254, 42);
+            btnEditLearningModuleSave.Size = new Size(203, 34);
             btnEditLearningModuleSave.TabIndex = 11;
             btnEditLearningModuleSave.Text = "Atnaujinti";
             btnEditLearningModuleSave.UseVisualStyleBackColor = true;
@@ -691,10 +701,10 @@
             // btnDeleteLearningModule
             // 
             btnDeleteLearningModule.Dock = DockStyle.Fill;
-            btnDeleteLearningModule.Location = new Point(709, 610);
-            btnDeleteLearningModule.Margin = new Padding(4, 5, 4, 5);
+            btnDeleteLearningModule.Location = new Point(566, 485);
+            btnDeleteLearningModule.Margin = new Padding(3, 4, 3, 4);
             btnDeleteLearningModule.Name = "btnDeleteLearningModule";
-            btnDeleteLearningModule.Size = new Size(180, 42);
+            btnDeleteLearningModule.Size = new Size(144, 34);
             btnDeleteLearningModule.TabIndex = 12;
             btnDeleteLearningModule.Text = "Ištrinti";
             btnDeleteLearningModule.UseVisualStyleBackColor = true;
@@ -706,11 +716,10 @@
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(939, 735);
+            ClientSize = new Size(751, 588);
             Controls.Add(tabControl);
-            Margin = new Padding(4);
             Name = "FormMain";
             Text = "Student grades";
             tabControl.ResumeLayout(false);

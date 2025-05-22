@@ -42,7 +42,6 @@ namespace WF_job
         {
             try
             {
-                // Add validation to ensure text fields are not empty
                 if (!_validationService.IsStringInputValid(textBoxNewStudentName.Text, "Student Name") ||
                     !_validationService.IsStringInputValid(textBoxNewStudentSurname.Text, "Student Surname"))
                 {

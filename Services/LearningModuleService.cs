@@ -4,7 +4,7 @@ using WF_job.Interfaces;
 
 namespace WF_job.Services
 {
-    public class LearningModuleService : ILearningModuleService, IDisposable
+    public class LearningModuleService : ILearningModuleService
     {
         private readonly AppDatabaseContext _context;
         private readonly bool _ownsContext;
@@ -42,7 +42,7 @@ namespace WF_job.Services
 
             existingLearningModule.Name = learningModule.Name;
             existingLearningModule.Students = learningModule.Students;
-            _ = await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return existingLearningModule;
         }
@@ -58,14 +58,6 @@ namespace WF_job.Services
             await _context.SaveChangesAsync();
 
             return true;
-        }
-
-        public void Dispose()
-        {
-            if (_ownsContext)
-            {
-                _context?.Dispose();
-            }
         }
     }
 }
